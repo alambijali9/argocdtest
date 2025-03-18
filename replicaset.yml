@@ -1,0 +1,29 @@
+# apiVersion: apps/v1
+# kind: ReplicaSet
+# metadata: 
+#   name: tappu-rs
+#   namespace: default
+#   labels:
+#     app: frontend
+# spec:
+#   replicas:
+#   selector:
+#     matchExpressions:
+#     - key: app
+#       operator: In
+#       values:
+#       - frontend
+#     #matchLabels<map[string]string>   
+#   template:
+#     metadata:
+#       labels:
+#         app: frontend
+#       name: pod1
+#     spec:
+#       containers:
+#       - image:
+#         name:
+#         ports:
+#         - containerPort:
+        
+
